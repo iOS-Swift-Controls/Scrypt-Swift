@@ -9,7 +9,8 @@ Scrypt is slow hashing algorithm and provides **CPU** as well as **memory** inte
 ```Swift
 import Scrypt
 
-// Generates 64 byte hash with 16 bytes random salt and returns result as MCF composed string for storage - which includes hash, salt and other algorithm information. 
+// Generates 64 byte hash with 16 bytes random salt and returns result as MCF composed string for storage.
+// MFC string includes hash, salt and other algorithm info. 
 let hash: String = try! Scrypt.generateHash(
     password: "Password123!",
     N: Scrypt.N, /* 16384 - main performance modifier CPU & RAM cost */
@@ -21,7 +22,8 @@ let hash: String = try! Scrypt.generateHash(
 ```Swift
 import Scrypt
 
-// More generic function where you can supply custom salt and specify hash length. Return value is Data (bytes of data)
+// More generic function where you can supply custom salt and specify hash length. 
+// Return value is Data (bytes of data)
 let salt: Data = try! Scrypt.generateSalt(length: 16)
 let hash: Data = try! Scrypt.generateHash(
     password: "Password123!",
