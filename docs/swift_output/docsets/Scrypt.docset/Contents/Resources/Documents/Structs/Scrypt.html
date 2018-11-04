@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scrypt Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Scrypt" class="dashAnchor"></a>
+    <a title="Scrypt Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Scrypt Docs</a> (46% documented)</p>
+        <p class="header-right"><a href="https://github.com/matejukmar/Scrypt-Swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Scrypt Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Scrypt Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Scrypt.html">Scrypt</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Scrypt</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Scrypt</span></code></pre>
+
+                </div>
+              </div>
+            <p>Scrypt Swift wrapper utility for hashing password</p>
+
+<p>Based on technion libscrypt C library: <a href="https://github.com/technion/libscrypt">https://github.com/technion/libscrypt</a></p>
+
+<ul>
+<li>Common parameters
+
+<ul>
+<li>N: CPU AND RAM cost (first modifier). It is main performance modifier with suggested value 16384.</li>
+<li>r: RAM Cost</li>
+<li>p: CPU cost (parallelisation)</li>
+</ul></li>
+</ul>
+
+<p>Standard values of r and p are 8 and 1. They can be changed to modify CPU/RAM ratio</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV8HASH_LENSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/HASH_LEN" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV8HASH_LENSivpZ">HASH_LEN</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">HASH_LEN</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV6SAFE_NSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/SAFE_N" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV6SAFE_NSivpZ">SAFE_N</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SAFE_N</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV8SALT_LENSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/SALT_LEN" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV8SALT_LENSivpZ">SALT_LEN</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SALT_LEN</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV7MCF_LENSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/MCF_LEN" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV7MCF_LENSivpZ">MCF_LEN</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">MCF_LEN</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV6MCF_IDSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/MCF_ID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV6MCF_IDSSvpZ">MCF_ID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">MCF_ID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV1NSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/N" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV1NSivpZ">N</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">N</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV1rSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/r" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV1rSivpZ">r</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">r</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV1pSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/p" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV1pSivpZ">p</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV12generateHash8password4salt1N1r1p6length10Foundation4DataVSS_ALS4itKFZ"></a>
+                    <a name="//apple_ref/swift/Method/generateHash(password:salt:N:r:p:length:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV12generateHash8password4salt1N1r1p6length10Foundation4DataVSS_ALS4itKFZ">generateHash(password:salt:N:r:p:length:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates Scrypt hash for given password and salt</p>
+
+<ul>
+<li>Return value
+Generated scrypt hash as Data with length bytes</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">generateHash</span><span class="p">(</span><span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">salt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="kt"><a href="../Structs/Scrypt.html#/s:6ScryptAAV1NSivpZ">N</a></span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">r</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV12generateHash12passwordData4salt1N1r1p6length10Foundation0E0VAL_ALS4itKFZ"></a>
+                    <a name="//apple_ref/swift/Method/generateHash(passwordData:salt:N:r:p:length:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV12generateHash12passwordData4salt1N1r1p6length10Foundation0E0VAL_ALS4itKFZ">generateHash(passwordData:salt:N:r:p:length:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates Scrypt hash for given password and salt</p>
+
+<ul>
+<li>password: password as Data value</li>
+<li>salt: salt as Data value</li>
+<li>N, r, p: see common parameters</li>
+<li>Return value
+Generated scrypt hash as Data with length bytes</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">generateHash</span><span class="p">(</span><span class="nv">passwordData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">salt</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="kt"><a href="../Structs/Scrypt.html#/s:6ScryptAAV1NSivpZ">N</a></span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">r</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV12generateHash8password1N1r1pS2S_S3itKFZ"></a>
+                    <a name="//apple_ref/swift/Method/generateHash(password:N:r:p:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV12generateHash8password1N1r1pS2S_S3itKFZ">generateHash(password:N:r:p:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates Scrypt mfc string hash for given password. It generates random salt with default length of 16 bytes.</p>
+
+<ul>
+<li>Return value
+Generated scrypt hash as Data with length bytes</li>
+</ul>
+
+<p>Length of MCF string is calculated like this:
+$s1 Identifier, three chars
+$0e0810 Work order and separator, six chars
+Formula for binary to base64 length = ceil(n/3)*4
+$pcL+DWle903AXcKJVwMffA== Salt is 16 bytes, or 24 in Base64
+$dn+9ujljVc5JTJMC2fYu1ZEHdJyqYkOurmcrBQbMHUfnD6qxbTmNiR075ohNBZjvp66E2aV1pfOrmyNHUefjMg== Hash is 64 bytes, or 88 in Base64.
+Work order, salt and hash have separators (3)
+3 + 6 + 24 + 88 + 3 + null byte = 125
+This is rounded up to a multiple of four for alignment</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">generateHash</span><span class="p">(</span><span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt"><a href="../Structs/Scrypt.html#/s:6ScryptAAV1NSivpZ">N</a></span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">r</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV3mcf1N1r1p4salt4hashSSSi_S2iS2StKFZ"></a>
+                    <a name="//apple_ref/swift/Method/mcf(N:r:p:salt:hash:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV3mcf1N1r1p4salt4hashSSSi_S2iS2StKFZ">mcf(N:r:p:salt:hash:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts hash data into MFC format for storage</p>
+
+<p>Length of MCF string is calculated like this:
+$s1 Identifier, three chars
+$0e0810 Work order and separator, six chars
+Formula for binary to base64 length = ceil(n/3)*4
+$pcL+DWle903AXcKJVwMffA== Salt is 16 bytes, or 24 in Base64
+$dn+9ujljVc5JTJMC2fYu1ZEHdJyqYkOurmcrBQbMHUfnD6qxbTmNiR075ohNBZjvp66E2aV1pfOrmyNHUefjMg== Hash is 64 bytes, or 88 in Base64.
+Work order, salt and hash have separators (3)
+3 + 6 + 24 + 88 + 3 + null byte = 125
+This is rounded up to a multiple of four for alignment</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">mcf</span><span class="p">(</span><span class="kt"><a href="../Structs/Scrypt.html#/s:6ScryptAAV1NSivpZ">N</a></span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">r</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">p</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">salt</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hash</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV12generateSalt6length10Foundation4DataVSi_tKFZ"></a>
+                    <a name="//apple_ref/swift/Method/generateSalt(length:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV12generateSalt6length10Foundation4DataVSi_tKFZ">generateSalt(length:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates random salt of length bytes. Uses /dev/urandom/</p>
+
+<ul>
+<li>Return value
+
+<ul>
+<li>Salt as byte Data</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">generateSalt</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6ScryptAAV5check3mcf8passwordSbSS_SStKFZ"></a>
+                    <a name="//apple_ref/swift/Method/check(mcf:password:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6ScryptAAV5check3mcf8passwordSbSS_SStKFZ">check(mcf:password:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Verifies given hash data in MFC format against password</p>
+
+<ul>
+<li>Return value
+
+<ul>
+<li>True if password matches and False otherwise</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">check</span><span class="p">(</span><span class="nv">mcf</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://matejukmar.com" target="_blank" rel="external">Matej</a>. All rights reserved. (Last updated: 2018-11-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

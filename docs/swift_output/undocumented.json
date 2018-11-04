@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 19,
+      "symbol": "Scrypt.HASH_LEN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 20,
+      "symbol": "Scrypt.SAFE_N",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 21,
+      "symbol": "Scrypt.SALT_LEN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 22,
+      "symbol": "Scrypt.MCF_LEN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 23,
+      "symbol": "Scrypt.MCF_ID",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 24,
+      "symbol": "Scrypt.N",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 25,
+      "symbol": "Scrypt.r",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matej/Projects/Scrypt/Sources/Scrypt/Scrypt.swift",
+      "line": 26,
+      "symbol": "Scrypt.p",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matej/Projects/Scrypt"
+}
